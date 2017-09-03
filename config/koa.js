@@ -42,7 +42,7 @@ module.exports = function (app, passport) {
 
   app.use(function *(next) {
     this.render = views(config.app.root + "/src/views", {
-      map: { html: "swig" },
+      map: { html: "pug" },
       cache : config.app.env === "development" ?  "memory" : false
     });
     yield next;
