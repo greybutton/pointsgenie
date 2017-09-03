@@ -39,7 +39,7 @@
     "bson": "^1.0.4",
     "classnames": "~1.2.1",
     "co": "~4.5.2",
-    "co-views": "0.3.x",
+    "co-views": "^2.1.0",
     "css-loader": "~0.28.0",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "~0.11.1",
