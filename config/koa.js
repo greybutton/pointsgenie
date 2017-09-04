@@ -24,6 +24,7 @@ module.exports = function (app, passport) {
   }
 
   app.use(errorHandler({
+    engine: "pug",
     template: config.app.root + "/src/views/error.html"
   }));
 

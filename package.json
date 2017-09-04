@@ -23,7 +23,9 @@
     "wbuild": "set NODE_ENV=production&& webpack --config webpack.config.js --separate-stylesheet --optimize-minimize --progress --profile --colors --bail"
   },
   "author": "Hugo Dozois <hugo@dozoisch.com>",
-  "contributors": ["Tommy Savaria <tommy.savaria@protonmail.ch>"],
+  "contributors": [
+    "Tommy Savaria <tommy.savaria@protonmail.ch>"
+  ],
   "license": "MIT",
   "engines": {
     "node": ">=6.0.0"
@@ -51,7 +53,7 @@
     "koa-bodyparser": "~1.6.0",
     "koa-compress": "1.0.x",
     "koa-connect": "1.0.0",
-    "koa-error": "1.1.x",
+    "koa-error": "^2.1.0",
     "koa-generic-session": "^1.11.5",
     "koa-generic-session-mongo": "^0.3.1",
     "koa-logger": "1.2.x",
