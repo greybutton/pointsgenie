@@ -1,26 +1,16 @@
-{% extends "layout.html" %}
-{% block title %}Erreur {{status}} - {{sitename}}{% endblock %}
-{% block navlinks %}
-  <li><a href="/faq"><span class="glyphicon glyphicon-pushpin"></span> FAQ</a></li>
-{% if ctx.passport && ctx.passport.isAuthenticated() %}
-  <li><a href="/profile">{{ctx.passport.user.data.name}}</a></li>
-  <li><a href="/logout">Déconnexion</a></li>
-{% endif %}
-{% endblock  %}
-{% block content %}
-<div class="jumbotron" id="error">
-  <div class="container">
-    <h1>Erreur {{status}}</h1>
-    <p>Oups une erreur s'est produite, en accédant à {{request.host}}{{request.path}}!</p>
-    <blockquote>{{error}}</blockquote>
-    <a href="/">retour à l'accueil</a>
-    {% if env == "development" %}
-      <pre>
-        <code>
-  {{stack}}
-        </code>
-      </pre>
-    {% endif %}
-  </div>
-</div>
-{% endblock %}
+doctype html
+html(lang="en")
+  head
+    title= Error
+    script(type='text/javascript').
+      if (foo) bar(1 + 5)
+  body
+    h1 Pug - node template engine
+    #container.col
+      if youAreUsingPug
+        p You are amazing
+      else
+        p Get on it!
+      p.
+        Pug is a terse and simple templating language with a
+        strong focus on performance and powerful features.
