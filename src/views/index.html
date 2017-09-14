@@ -18,15 +18,12 @@
   {% block footer %}
     {% if isAuth %}
       <p>
-        <b>Directeur Points Génie</b> - <a href="mailto:philippe.st-louis2@usherbrooke.ca" >Philippe St-Louis</a><br/>
-        <b>Directeur Points Génie</b> - <a href="mailto:marie-pier.gaudet@usherbrooke.ca" >Marie-Pier Gaudet</a><br/>
-        <b>Webmestre</b> - <a href="mailto:laurent.huot2@usherbrooke.ca" >Laurent Huot</a><br/>
-        <b>Webmestre</b> - <a href="mailto:guillaume.paquet@usherbrooke.ca" >Guillaume Paquet</a>
+        <b>Webmestre</b> - <a href="mailto:tommy.savaria@usherbrooke.ca" >Tommy Savaria</a>
       </p>
     {% endif %}
     <p>
       <b>Version</b> - {{version}} #{{commit}} -
-      <a href={{"https://raw.githubusercontent.com/schmouck/pointsgenie/v" + version +"/HISTORY.md"}}>Changelog</a>
+      <a href={{"https://raw.githubusercontent.com/NewLunarFire/pointsgenie/v" + version +"/HISTORY.md"}}>Changelog</a>
     </p>
   {% endblock %}
 </div>
